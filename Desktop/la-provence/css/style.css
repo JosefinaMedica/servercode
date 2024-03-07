@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+nav {
+    background-color: #ededed; /* color de fondo de la barra de navegación */
+    color: #acaaaa; /* color de texto de la barra de navegación */
+    height: 50px; /* altura de la barra de navegación */
+    
+  }
+  
+  nav ul {
+    list-style: none; /* quitar los puntos de la lista */
+    margin: 0;
+    padding: 0 20px 0 0;
+    display: flex; /* mostrar los elementos en línea */
+    justify-content: flex-end; /* distribuir los elementos equitativamente */
+    gap: 20px;
+    align-items: center; /* centrar verticalmente los elementos */
+    height: 100%; /* asegurarse de que la altura sea igual a la de la barra de navegación */
+  }
+  
+  nav a {
+    color: #b2afaf; /* color de texto de los enlaces */
+    text-decoration: none; /* quitar el subrayado de los enlaces */
+    font-size: 15px; /* tamaño de fuente de los enlaces */
+    font-family: "Raleway", sans-serif;
+    
+    
+  }
+  
+  nav a:hover {
+    color: rgb(83, 83, 83); /* color de texto de los enlaces al pasar el mouse */
+  }
+
+  nav img {
+    height: 50px;
+    margin-right: 10px;
+    float: left; /* coloca la imagen a la izquierda */
+    /* o */
+    margin: 0 auto; /* centra la imagen */
+    display: block; /* permite que la imagen tenga un ancho máximo */
+    padding-left: 1rem;
+  }
+
+  main {
+     /* establece el fondo degradado */
+    color: #c7c7c7; /* establece el color del texto */
+    text-align: center; /* centra el texto */
+    padding: 50px; /* agrega un espacio alrededor del texto */
+  }
+  
+  h1 {
+    font-size: 2rem; /* ajusta el tamaño del encabezado */
+    margin: 0; /* elimina el margen predeterminado */
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px; 
+    margin-bottom: 1rem;
+    animation: color-change 5s infinite;
+    
+  }
+  @keyframes color-change {
+    0% {
+      color: rgb(149, 148, 148);
+    }
+    50% {
+      color: rgb(213, 211, 211);
+    }
+    100% {
+      color: rgb(124, 123, 123);
+    }
+  }
+  
+  
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 30px 0;
+  }
+  
+  .carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    gap: 20px;
+  }
+
+
+  .text-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .text-container p {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif;
+  }
+  
+
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+    color: #fff;
+    padding: 20px 20px;
+    font-family: "Raleway", sans-serif;
+  }
+ 
+  
+  footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; 
+    letter-spacing: 1px;   
+}
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    justify-content: center;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .fa {
+    font-size: 20px;
+    margin-right: 5px;
+  }
